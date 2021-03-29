@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: gitlab-transfer
+
+server:
+  port: 9000
+
+
+okhttp:
+  ## NONE, BASIC,HEADERS,BODY
+  logLevel: BASIC
+  # unit default mill
+  readTimeout: 20
+  connecTimeout: 20
+
+
+gitlab:
+  sourceUrl: http://xxx/api/v4/
+  sourceToken: w7hf-xzGxaa_bayPMqdF
+  # 导入项目用
+  sourceUserName: mickey.xiao
+  sourcePassword: 1qaz@WSX
+  targetUrl: http://yyy/api/v4/
+  targetToken: wqzeyya4xzEa9GYeYWBq
+  defaultPassword: 1qaz@WSX123
